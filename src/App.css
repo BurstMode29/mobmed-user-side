@@ -30,18 +30,26 @@
 }
 /* Background */ 
 
-.Logo img{
+.Logo{
   z-index: 2;
-  top: 50px;
-  right: 685px;
+  top: 35px;
+  right: 688px;
+  color: #9fc131;
+  font-size: 100px;
   position: absolute;
-  height: 100px;
-  width: 100px;
+  animation-name: pulse;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  from {font-size:95px;}
+  to {font-size:100px;}
 }
 
 @media only screen and (max-width: 600px) {
-  .Logo img {
-    top: 100px;
+  .Logo {
+    top: 85px;
     right: 149px;
   }
 }
@@ -97,6 +105,27 @@
 }
 /* component-2 */
 
+/* Welcome */
+
+.Welcome {
+  position: absolute;
+  left: 410px;
+  top: 250px;
+  width: 600px;
+  color: white;
+}
+
+@media only screen and (max-width:800px){
+  .Welcome {
+    font-size: 12px;
+    top: 300px;
+    left: 50px;
+    width: 300px;
+  }
+}
+
+/* Welcome */
+
 /* component-3 */
 .component-3 {
   border-radius: 20px;
@@ -141,7 +170,7 @@
 
 /* component-5 */
 .Links a{
-  color: cadetblue;
+  color: #042940;
   margin: 10px 90px;
   font-size: 30px;
   text-decoration-line: none;
@@ -197,6 +226,12 @@
   transition: right 1s;
 }
 
+@media only screen and (max-width:800px) {
+  .SideMenu {
+    display: none;
+  }
+}
+
 .Pull {
   top: 50px;
   left: 670px;
@@ -207,7 +242,12 @@
   height: 50px;
   width: 100px;
   background-color: rgb(255, 255, 255);
-  
+}
+
+@media only screen and (max-width:800px) {
+  .Pull {
+    left: 270px;
+  }
 }
 
 .Pull img {
@@ -242,3 +282,72 @@
   background-color: grey;
 }
 /* side-menu */
+
+/* Mobile Menu */
+
+.MobileMenu {
+  height: 0%;
+  width: 80%;
+  background-color: #042940;
+  position: absolute;
+  z-index: 3;
+  display: none;
+  transition: height 1s;
+}
+
+@media only screen and (max-width:800px) {
+  .MobileMenu {
+    display: block;
+  }
+}
+
+.MobileMenuIcon {
+  position: absolute;
+  z-index: 4;
+  color: white;
+  font-size: 30px;
+  top: 10px;
+  right: 30px;
+  display: none;
+}
+
+@media only screen and (max-width:800px) {
+  .MobileMenuIcon {
+    display: block;
+  }
+}
+/* /Mobile Menu */
+
+/* Footer */
+
+.footer {
+  position: absolute;
+  left: 520px;
+}
+
+@media only screen and (max-width:800px) {
+  .footer {
+    top: 770px;
+    left: 40px;
+  }
+}
+
+.FooterIcons i {
+  margin: 10px 50px 10px 50px;
+  font-size: 20px;
+  color: white;
+}
+
+@media only screen and (max-width:800px) {
+  .FooterIcons i {
+    margin: 10px 40px 10px 40px;
+  }
+}
+
+.FooterText {
+  z-index: 2;
+  font-size: 15px;
+  color:white;
+}
+
+/* /Footer */
