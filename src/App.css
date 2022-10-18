@@ -1,0 +1,244 @@
+.App {
+  text-align: center;
+  overflow: hidden;
+}
+
+
+/* Background */
+.background {
+  z-index: 1;
+}
+
+.Blend {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 70%;
+  background-color: black;
+}
+
+.background img{
+  padding-top: 100px;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .background img {
+    padding-top: 300px;
+  }
+}
+/* Background */ 
+
+.Logo img{
+  z-index: 2;
+  top: 50px;
+  right: 685px;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Logo img {
+    top: 100px;
+    right: 149px;
+  }
+}
+
+.MyComponents {
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+/* component-1 */
+.component-1 {
+  top: 150px;
+  left: 700px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 50px;
+  width: 5px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .component-1 {
+    top: 200px;
+    left: 190px;
+  }
+}
+/* component-1 */
+
+/* component-2 */
+.component-2 {
+  border-radius: 20px;
+  top: 200px;
+  left: 250px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 5px;
+  width: 900px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .component-2 {
+    top: 250px;
+    left: 50px;
+    width: 300px;
+  }
+}
+/* component-2 */
+
+/* component-3 */
+.component-3 {
+  border-radius: 20px;
+  top: 500px;
+  left: 250px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 5px;
+  width: 900px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .component-3 {
+    top: 500px;
+    left: 50px;
+    width: 300px;
+  }
+}
+/* component-3 */
+
+/* component-4 */
+.component-4 {
+  top: 500px;
+  left: 700px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 50px;
+  width: 5px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .component-4 {
+    top: 500px;
+    left: 190px;
+  }
+}
+/* component-4 */
+
+/* component-5 */
+.Links a{
+  color: cadetblue;
+  margin: 10px 90px;
+  font-size: 30px;
+  text-decoration-line: none;
+}
+
+.Links a:hover {
+  color: darkgray;
+}
+
+@media only screen and (max-width: 600px) {
+  .Links a{
+    font-size: 20px;
+    margin: 10px 27px;
+  }
+}
+
+.component-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  top: 550px;
+  left: 250px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 100px;
+  width: 900px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .component-5 {
+    top: 550px;
+    left: 50px;
+    height: 50px;
+    width: 300px;
+  }
+}
+/* component-5 */
+
+/* side-menu */
+.SideMenu {
+  z-index: 3;
+  top: 30px;
+  right: 100%;
+  border-radius: 10px;
+  height: 700px;
+  width: 700px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  box-shadow: 1px 1px 10px;
+  transition: right 1s;
+}
+
+.Pull {
+  top: 50px;
+  left: 670px;
+  padding: 0;
+  text-align: right;
+  border-radius: 10px;
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+.Pull img {
+  height: 50px;
+  width: 50px;
+}
+
+.Bell {
+  position: absolute;
+  margin: 20px 20px;
+}
+
+.Bell i{
+  font-size: 30px;
+}
+
+.Chart img{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 80px;
+    right: 470px;
+}
+
+.ClientInfo {
+  position: absolute;
+  border-radius: 40px;
+  height: 70px;
+  width: 400px;
+  top: 100px;
+  right: 30px;
+  background-color: grey;
+}
+/* side-menu */
