@@ -1,0 +1,38 @@
+/* side-menu */
+.SideMenu {
+    z-index: 3;
+    top: 30px;
+    right: 100%;
+    border-radius: 10px;
+    height: 700px;
+    width: 700px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    box-shadow: 1px 1px 10px;
+    transition: right 1s;
+  }
+  
+  @media only screen and (max-width:800px) {
+    .SideMenu {
+      display: none;
+    }
+  }
+  
+  .Pull {
+    top: 50px;
+    left: 670px;
+    padding: 0;
+    text-align: right;
+    border-radius: 10px;
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  @media only screen and (max-width:800px) {
+    .Pull {
+      left: 270px;
+    }
+  }
+  /* side-menu */

@@ -1,45 +1,14 @@
 import './App.css';
 import background from './images/Courier_Mobmed.png';
-import menu from './images/paragraph.png';
-import chart from './images/pie-chart.png';
+import Mobile from './components/Mobile';
+import Dash from './components/Dash';
 
 function App() {
 
-  // Desktop Menu
-  function openMenu() {
-    var x = document.getElementById("Menu");
-    if (x.style.right === "100%") {
-      x.style.right = "50%";
-    } else {
-      x.style.right = "100%";
-    }
-  }
-  // Mobile Menu
-
-  function MobileMenu() {
-    var m = document.getElementById("MobileMenu");
-    if (m.style.height === "0%") {
-      m.style.height = "100%";
-    } else {
-      m.style.height = "0%"
-    }
-  }
-
   return (
     <div className="App">
-   
-    
-    <div className='SideMenu' id="Menu">
-      <div className='Bell'><i class="fa-sharp fa-solid fa-bell"></i></div>
-      <div className='Chart'><img src={chart}/></div>
-      <div className='ClientInfo'></div>
-      <div className='Pull'><a onClick={openMenu} className='Click' href='#'><img src={menu}/></a></div>
-    </div>
-
-    <div className='MobileMenuIcon' onClick={MobileMenu}><i class="fa-solid fa-bars"></i></div>
-    <div className='MobileMenu' id='MobileMenu'>
-
-    </div>
+    <Mobile></Mobile>
+    <Dash></Dash>
     
     <div id="Content">
 
@@ -63,6 +32,7 @@ function App() {
           <div className='component-5'><div className='Links'><a href='#'><i class="fa-solid fa-user"></i></a><a href='#'><i class="fa-solid fa-list"></i></a><a href='#'><i class="fa-solid fa-folder"></i></a><a href='#'><i class="fa-sharp fa-solid fa-gear"></i></a></div></div>
         </div>
       <div className='background'><div className='Blend'></div><img src={background}/></div>
+      
       <div className='footer'>
           <div className='FooterIcons'><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i></div>
           <div className='FooterText'>© MOBMED | MOBILE MEDICATION</div>

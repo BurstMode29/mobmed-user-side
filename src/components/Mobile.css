@@ -1,0 +1,146 @@
+/* Mobile Menu */
+
+.MobileMenu {
+    height: 0%;
+    width: 80%;
+    background-color: #042940;
+    position: absolute;
+    z-index: 3;
+    display: none;
+    transition: height 1s;
+  }
+
+  .MobileBell {
+    display: none;
+  }
+
+  .MobileMenuIcon {
+    position: absolute;
+    z-index: 4;
+    color: white;
+    font-size: 30px;
+    top: 10px;
+    right: 30px;
+    display: none;
+  }
+  
+  @media only screen and (max-width:800px) {
+    .MobileMenuIcon {
+      display: block;
+    }
+  }
+  
+  /* Responsive Code */
+  @media only screen and (max-width:800px) {
+    .MobileMenu {
+      display: block;
+    }
+
+    .MobileBell {
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: 250px;
+      font-size: 20px;
+      color: white;
+    }
+
+    .ProfilePhoto {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      height: 50px;
+      width: 50px;
+      background-color: white;
+      border-radius: 100%;
+    }
+
+    .MobileSettings {
+      color: white;
+      position: absolute;
+      top: 20px;
+      left: 200px;
+      font-size: 20px;
+    }
+
+    .MobileMessaging {
+      color: white;
+      font-size: 23px;
+      position: absolute;
+      top: 18px;
+      left: 150px;
+    }
+
+    .DashHeader {
+      position: absolute;
+      top: 70px;
+      left: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .Cards {
+      position: absolute;
+      width: 100%;
+      top: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Revenue {
+      height: 50px;
+      width: 90px;
+      border-radius: 5px;
+      background: white;
+      margin: 5px 5px;
+    }
+
+    .Sales {
+      height: 50px;
+      width: 90px;
+      border-radius: 5px;
+      background: white;
+      margin: 5px 5px;
+    }
+
+    .Cost {
+      height: 50px;
+      width: 90px;
+      border-radius: 5px;
+      background: white;
+      margin: 5px 5px;
+    }
+
+    .TableHeader {
+      position: absolute;
+      top: 190px;
+      left: 10px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .MobileTable {
+      position: absolute;
+      top: 220px;
+      font-size: 12px;
+      background-color: white;
+      left: 10px;
+      border-collapse: collapse;
+    }
+
+    .MobileTable th {
+      text-align: left;
+      border: 1px solid grey;
+    }
+
+    .MobileTable td {
+      border: 1px solid grey;
+    }
+
+  }
+  /* Responsive Code */
+
+ 
+  /* /Mobile Menu */
