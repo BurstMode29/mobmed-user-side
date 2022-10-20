@@ -1,247 +1,122 @@
 .App {
   text-align: center;
   overflow: hidden;
-}
-
-
-/* Background */
-.background {
-  z-index: 1;
-}
-
-.Blend {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  opacity: 70%;
-  background-color: black;
-}
-
-.background img{
-  padding-top: 100px;
-  height: 100%;
-  width: 100%;
-}
-
-@media only screen and (max-width: 600px) {
-  .background img {
-    padding-top: 300px;
-  }
-}
-/* Background */ 
-
-.Logo{
-  z-index: 2;
-  top: 35px;
-  right: 688px;
-  color: #9fc131;
-  font-size: 100px;
-  position: absolute;
-  animation-name: pulse;
-  animation-duration: 0.8s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes pulse {
-  from {font-size:95px;}
-  to {font-size:100px;}
-}
-
-@media only screen and (max-width: 600px) {
-  .Logo {
-    top: 85px;
-    right: 149px;
-  }
-}
-
-.MyComponents {
-  z-index: 2;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  position: absolute;
+  align-items: center;
 }
 
-/* component-1 */
+@media only screen and (max-width:500px) {
+  #Content {
+    margin-top: 12vw;
+  }
+}
+
+/* Components */
+.MyComponents {
+  width: 50vw;
+}
+
+.ComponentBox-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .component-1 {
-  top: 150px;
-  left: 700px;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  height: 50px;
-  width: 5px;
-  background-color: white;
+  height: 5rem;
+  width: 0.3rem;
+  background-color: #042940;
 }
 
-@media only screen and (max-width: 600px) {
-  .component-1 {
-    top: 200px;
-    left: 190px;
-  }
+.ComponentBox-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* component-1 */
 
-/* component-2 */
 .component-2 {
-  border-radius: 20px;
-  top: 200px;
-  left: 250px;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  height: 5px;
-  width: 900px;
-  background-color: white;
+  height: 0.3rem;
+  width: 50rem;
+  background-color: #042940;
 }
 
-@media only screen and (max-width: 600px) {
-  .component-2 {
-    top: 250px;
-    left: 50px;
-    width: 300px;
-  }
-}
-/* component-2 */
-
-/* Welcome */
-
-.Welcome {
-  position: absolute;
-  left: 410px;
-  top: 250px;
-  width: 600px;
-  color: white;
+.ComponentBox-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media only screen and (max-width:800px){
-  .Welcome {
-    font-size: 12px;
-    top: 300px;
-    left: 50px;
-    width: 300px;
-  }
-}
-
-/* Welcome */
-
-/* component-3 */
 .component-3 {
-  border-radius: 20px;
-  top: 500px;
-  left: 250px;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  height: 5px;
-  width: 900px;
-  background-color: white;
+  height: 0.3rem;
+  width: 50rem;
+  background-color: #042940;
 }
 
-@media only screen and (max-width: 600px) {
-  .component-3 {
-    top: 500px;
-    left: 50px;
-    width: 300px;
-  }
+.ComponentBox-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* component-3 */
 
-/* component-4 */
 .component-4 {
-  top: 500px;
-  left: 700px;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  height: 50px;
-  width: 5px;
-  background-color: white;
+  height: 5rem;
+  width: 0.3rem;
+  background-color: #042940;
 }
 
-@media only screen and (max-width: 600px) {
-  .component-4 {
-    top: 500px;
-    left: 190px;
-  }
-}
-/* component-4 */
-
-/* component-5 */
-.Links a{
-  color: #042940;
-  margin: 10px 90px;
-  font-size: 30px;
-  text-decoration-line: none;
-}
-
-.Links a:hover {
-  color: darkgray;
-}
-
-@media only screen and (max-width: 600px) {
-  .Links a{
-    font-size: 20px;
-    margin: 10px 27px;
-  }
+.ComponentBox-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .component-5 {
+  height: 3rem;
+  width: 50rem;
+  background-color: #042940;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
-  top: 550px;
-  left: 250px;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  height: 100px;
-  width: 900px;
-  background-color: white;
+}
+/* Components */
+
+/* Welcome */
+
+.Welcome h1 {
+  font-size: 2vw;
+  color: #042940;
 }
 
-@media only screen and (max-width: 600px) {
-  .component-5 {
-    top: 550px;
-    left: 50px;
-    height: 50px;
-    width: 300px;
-  }
+.Welcome p {
+  font-size: 16px;
+  color: #042940;
 }
-/* component-5 */
+
+/* Logo-Pulse */
+
+.Logo {
+  font-size: 10vw;
+  color: #9fc131;
+}
+
+/* Logo-Pulse */
 
 /* Footer */
 
 .footer {
-  position: absolute;
-  left: 520px;
+  margin: 4vw 4vw;
 }
 
-@media only screen and (max-width:800px) {
-  .footer {
-    top: 770px;
-    left: 40px;
-  }
-}
-
-.FooterIcons i {
-  margin: 10px 50px 10px 50px;
-  font-size: 20px;
-  color: white;
-}
-
-@media only screen and (max-width:800px) {
-  .FooterIcons i {
-    margin: 10px 40px 10px 40px;
-  }
+.FooterIcons {
+  font-size: 2vw;
+  color:#042940;
 }
 
 .FooterText {
-  z-index: 2;
-  font-size: 15px;
-  color:white;
+  font-size: 2vw;
+  color:#042940;
 }
 
-/* /Footer */
+/* Footer */
+
