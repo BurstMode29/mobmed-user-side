@@ -46,13 +46,14 @@
     }
 
     .ProfilePhoto {
-      position: absolute;
+      position: relative;
       top: 5px;
-      left: 5px;
+      left: -50px;
       height: 50px;
       width: 50px;
       background-color: white;
       border-radius: 100%;
+      transition: 0.5s;
     }
 
     .MobileSettings {
@@ -137,6 +138,26 @@
 
     .MobileTable td {
       border: 1px solid grey;
+    }
+
+    .DashIcons {
+      position: relative;
+      top: -50px;
+      left: -300px;
+    }
+
+    .DashCards {
+      position: relative;
+      top: -50px;
+      left: -310px;
+      transition: 0.5s;
+    }
+
+    .DashTable {
+      position: relative;
+      top: -50px;
+      left: -300px;
+      transition: 0.5s;
     }
 
   }
