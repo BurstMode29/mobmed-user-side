@@ -1,166 +1,45 @@
 /* Mobile Menu */
 
 .MobileMenu {
-    height: 0%;
-    width: 80%;
-    background-color: #042940;
     position: absolute;
-    z-index: 3;
-    display: none;
+    top: 0.1px;
+    left: 0.1px;
+    height: 0%;
+    width: 70%;
+    background-color: #042940;
     transition: height 1s;
   }
 
-  .MobileBell {
-    display: none;
+  .MobileMenuIcon {
+    display: flex;
+    background-color: #042940;
+    justify-content: right;
+    align-items: center;
   }
 
-  .MobileMenuIcon {
-    position: absolute;
-    z-index: 4;
-    color: white;
-    font-size: 30px;
-    top: 10px;
+  .MobileMenuIcon i {
+    top: 20px;
     right: 30px;
+    color: black;
+    position: absolute;
+    font-size: 30px;
     display: none;
-  }
-  
-  @media only screen and (max-width:800px) {
-    .MobileMenuIcon {
-      display: block;
-    }
   }
   
   /* Responsive Code */
-  @media only screen and (max-width:800px) {
-    .MobileMenu {
+
+
+  @media only screen and (max-width:1000px) {
+    .MobileMenuIcon i{
       display: block;
     }
-
-    .MobileBell {
-      display: block;
-      position: absolute;
-      top: 20px;
-      left: 250px;
-      font-size: 20px;
-      color: white;
-    }
-
-    .ProfilePhoto {
-      position: relative;
-      top: 5px;
-      left: -50px;
-      height: 50px;
-      width: 50px;
-      background-color: white;
-      border-radius: 100%;
-      transition: 0.5s;
-    }
-
-    .MobileSettings {
-      color: white;
-      position: absolute;
-      top: 20px;
-      left: 200px;
-      font-size: 20px;
-    }
-
-    .MobileMessaging {
-      color: white;
-      font-size: 23px;
-      position: absolute;
-      top: 18px;
-      left: 150px;
-    }
-
-    .DashHeader {
-      position: absolute;
-      top: 70px;
-      left: 10px;
-      font-size: 20px;
-      font-weight: bold;
-      color: white;
-    }
-
-    .Cards {
-      position: absolute;
-      width: 100%;
-      top: 110px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .Revenue {
-      height: 50px;
-      width: 90px;
-      border-radius: 5px;
-      background: white;
-      margin: 5px 5px;
-    }
-
-    .Sales {
-      height: 50px;
-      width: 90px;
-      border-radius: 5px;
-      background: white;
-      margin: 5px 5px;
-    }
-
-    .Cost {
-      height: 50px;
-      width: 90px;
-      border-radius: 5px;
-      background: white;
-      margin: 5px 5px;
-    }
-
-    .TableHeader {
-      position: absolute;
-      top: 190px;
-      left: 10px;
-      font-weight: bold;
-      color: white;
-    }
-
-    .MobileTable {
-      position: absolute;
-      top: 220px;
-      font-size: 12px;
-      background-color: white;
-      left: 10px;
-      border-collapse: collapse;
-    }
-
-    .MobileTable th {
-      text-align: left;
-      border: 1px solid grey;
-    }
-
-    .MobileTable td {
-      border: 1px solid grey;
-    }
-
-    .DashIcons {
-      position: relative;
-      top: -50px;
-      left: -300px;
-    }
-
-    .DashCards {
-      position: relative;
-      top: -50px;
-      left: -310px;
-      transition: 0.5s;
-    }
-
-    .DashTable {
-      position: relative;
-      top: -50px;
-      left: -300px;
-      transition: 0.5s;
-    }
-
   }
+
+  
+
+  
+
+
   /* Responsive Code */
 
  
