@@ -81,7 +81,8 @@
 }
 
 .Links a {
-  margin: 0px 20px 0px 20px;
+  font-size: 20px;
+  margin: 0px 30px 0px 30px;
 }
 /* Components */
 
@@ -115,7 +116,7 @@
 }
 
 .FooterIcons {
-  font-size: 1.5vw;
+  font-size: 20px;
   color:#042940;
 }
 
