@@ -6,7 +6,7 @@
     border-radius: 10px;
     height: 700px;
     width: 700px;
-    background-color: rgb(255, 255, 255);
+    background-color:#042940;
     position: absolute;
     box-shadow: 1px 1px 10px;
     transition: right 1s;
@@ -27,7 +27,7 @@
     position: absolute;
     height: 50px;
     width: 100px;
-    background-color: rgb(255, 255, 255);
+    background-color:#042940;
   }
   
   @media only screen and (max-width:800px) {
@@ -36,3 +36,115 @@
     }
   }
   /* side-menu */
+
+  /* side menu-content */
+
+  .ProfilePhoto {
+    margin: 5px 5px;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 100%;
+    transition: 0.5s;
+  }
+
+  .DashIcons {
+    position: relative;
+    top: -50px;
+    left: 400px;
+  }
+
+  .DesktopBell {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .DesktopSettings {
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    font-size: 20px;
+  }
+
+  .DesktopMessaging {
+    color: white;
+    font-size: 23px;
+    position: absolute;
+    top: 18px;
+    left: 150px;
+  }
+
+  .DashCards {
+    margin-top: 20px;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .Cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .DashHeader {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .Revenue {
+    height: 100px;
+    width: 200px;
+    border-radius: 5px;
+    background: white;
+    margin: 5px 5px;
+  }
+
+  .Sales {
+    height: 100px;
+    width: 200px;
+    border-radius: 5px;
+    background: white;
+    margin: 5px 5px;
+  }
+
+
+  .Cost {
+    height: 100px;
+    width: 200px;
+    border-radius: 5px;
+    background: white;
+    margin: 5px 5px;
+  }
+
+  .TableHeader {
+    font-weight: bold;
+    color: white;
+  }
+
+  .DesktopTable {
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .DesktopTable th {
+    text-align: left;
+    background-color: #9fc131;
+    border: 1px solid grey;
+  }
+
+  .DesktopTable td {
+    background-color: white;
+    border: 1px solid grey;
+  }
+
+
+  /* side menu-content */

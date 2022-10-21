@@ -79,6 +79,10 @@
   justify-content: center;
   align-items: center;
 }
+
+.Links a {
+  margin: 0px 20px 0px 20px;
+}
 /* Components */
 
 /* Welcome */
@@ -92,6 +96,8 @@
   font-size: 16px;
   color: #042940;
 }
+
+/* Welcome */
 
 /* Logo-Pulse */
 
@@ -109,8 +115,12 @@
 }
 
 .FooterIcons {
-  font-size: 2vw;
+  font-size: 1.5vw;
   color:#042940;
+}
+
+.FooterIcons i{
+  margin: 0px 10px 0px 10px;
 }
 
 .FooterText {

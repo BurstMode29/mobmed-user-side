@@ -1,14 +1,14 @@
 import './App.css';
 // import background from './images/Courier_Mobmed.png';
 // import Mobile from './components/Mobile';
-// import Dash from './components/Dash';
+import Dash from './components/Dash';
 
 function App() {
 
   return (
     <div className="App">
     {/* <Mobile></Mobile> */}
-    {/* <Dash></Dash> */}
+    <Dash></Dash>
     
     <div id="Content">
 
