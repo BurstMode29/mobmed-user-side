@@ -15,19 +15,31 @@ const Dash = () => {
       x.style.right = "100%";
       x.style.boxShadow = "0px 0px 0px"
     }
-  }
+  }; 
   // Desktop Menu
 
+  // Notifications
+  function openNotifactions() {
+    var n = document.getElementById("NB");
+    if (n.style.left === "-800px") {
+      n.style.left = "800px";
+    } else {
+      n.style.left = "-800px"
+    }
+  };
 
   return (
     <div>
-      <div className='SideMenu' id="Menu">
+      <div className='notifBox' id='NB'></div>
 
+      <div className='SideMenu' id="Menu">
+      
         <div className='ProfilePhoto' id='PP'></div>
         <div className='DashIcons' id='DI'>
-          <div className='DesktopBell'><i class="fa-sharp fa-solid fa-bell"></i></div>
+          <div className='DesktopBell' onClick={openNotifactions}><i class="fa-sharp fa-solid fa-bell" ></i></div>
           <div className='DesktopSettings'><i class="fa-solid fa-gear"></i></div>
           <div className='DesktopMessaging'><i class="fa-sharp fa-solid fa-comment"></i></div>
+          
         </div>
 
         <div className='DashCards' id='DC'>
@@ -59,7 +71,7 @@ const Dash = () => {
 
           </table>
         </div>
-
+        
         <div onClick={openMenu} className='Pull'><a className='DashButton' href='#'><i class="fa-solid fa-chart-simple-horizontal"></i></a></div>
       </div>
     </div>

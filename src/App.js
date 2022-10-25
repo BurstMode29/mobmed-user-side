@@ -3,6 +3,7 @@ import './App.css';
 import Mobile from './components/Mobile';
 import Dash from './components/Dash';
 
+
 function App() {
 
   function MobileMenu() {
@@ -26,7 +27,6 @@ function App() {
     <div className="App">
       <Mobile></Mobile>
       <Dash></Dash>
-
       <div id="Content">
         <div>
 

@@ -39,7 +39,7 @@
 
   /* side menu-content */
 
-  /* .ProfilePhoto {
+  .ProfilePhoto {
     margin: 5px 5px;
     height: 50px;
     width: 50px;
@@ -144,7 +144,18 @@
   .DesktopTable td {
     background-color: white;
     border: 1px solid grey;
-  } */
+  }
 
 
   /* side menu-content */
+
+  .notifBox {
+    height: 500px;
+    width: 300px;
+    border-radius: 10px;
+    background-color:#042940;
+    position: absolute;
+    top: 230px;
+    left: -800px;
+    transition: left 0.5s;
+  }
