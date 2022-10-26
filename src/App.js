@@ -6,6 +6,16 @@ import Dash from './components/Dash';
 
 function App() {
 
+  // Cookie
+  // const isNew = localStorage.getItem("has-visited") == null;
+  // if (isNew) {
+  //   document.write("Hello new user!");
+  //   localStorage.setItem("has-visited", "true");
+  // } else {
+  //   document.write("You have visited before!");
+  // }
+  // Cookie
+
   function MobileMenu() {
     var m = document.getElementById("MobileMenu");
     if (m.style.height === "0%") {

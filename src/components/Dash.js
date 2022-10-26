@@ -30,7 +30,9 @@ const Dash = () => {
 
   return (
     <div>
-      <div className='notifBox' id='NB'></div>
+      <div className='notifBox' id='NB'> 
+        <div className='notification' id='notifPop'></div>
+      </div>
 
       <div className='SideMenu' id="Menu">
       

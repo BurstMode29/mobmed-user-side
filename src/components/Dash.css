@@ -158,4 +158,14 @@
     top: 230px;
     left: -800px;
     transition: left 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .notification {
+    height: 50px;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
   }
