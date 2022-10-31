@@ -15,7 +15,7 @@ const Dash = () => {
       x.style.right = "100%";
       x.style.boxShadow = "0px 0px 0px"
     }
-  }; 
+  };
   // Desktop Menu
 
   // Notifications
@@ -28,20 +28,30 @@ const Dash = () => {
     }
   };
 
+  function closeNotifications() {
+    var closeNotif = document.getElementById("NB");
+    if (closeNotif.style.left === "-800px") {
+      closeNotif.style.left = "800px";
+    } else {
+      closeNotif.style.left = "-800px"
+    }
+  };
+  // Notifications
+
   return (
     <div>
-      <div className='notifBox' id='NB'> 
-        <div className='notification' id='notifPop'></div>
+      <div className='notifBox' id='NB'>
+        <div className='CloseNotifications' onClick={closeNotifications}><i class="fa-solid fa-xmark"></i></div>
+        <div className='notification' id='notifPop' ></div>
       </div>
 
       <div className='SideMenu' id="Menu">
-      
         <div className='ProfilePhoto' id='PP'></div>
         <div className='DashIcons' id='DI'>
           <div className='DesktopBell' onClick={openNotifactions}><i class="fa-sharp fa-solid fa-bell" ></i></div>
           <div className='DesktopSettings'><i class="fa-solid fa-gear"></i></div>
           <div className='DesktopMessaging'><i class="fa-sharp fa-solid fa-comment"></i></div>
-          
+
         </div>
 
         <div className='DashCards' id='DC'>
@@ -70,11 +80,10 @@ const Dash = () => {
                 <td>Approved</td>
               </tr>
             </div>
-
           </table>
         </div>
-        
-        <div onClick={openMenu} className='Pull'><a className='DashButton' href='#'><i class="fa-solid fa-chart-simple-horizontal"></i></a></div>
+
+        <div onClick={openMenu} className='Pull'><a className='DashButton' href='#'><i class="fa-sharp fa-solid fa-bars"></i></a></div>
       </div>
     </div>
   )

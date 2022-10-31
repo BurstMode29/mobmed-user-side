@@ -33,6 +33,7 @@
 .component-1 {
   height: 5rem;
   width: 0.3rem;
+  border-radius: 5px 5px 0px 0px;
   background-color: #042940;
 }
 
@@ -45,6 +46,7 @@
 .component-2 {
   height: 0.3rem;
   width: 50rem;
+  border-radius: 10px;
   background-color: #042940;
 }
 
@@ -57,6 +59,7 @@
 .component-3 {
   height: 0.3rem;
   width: 50rem;
+  border-radius: 10px;
   background-color: #042940;
 }
 
@@ -81,6 +84,7 @@
 .component-5 {
   height: 3rem;
   width: 50rem;
+  border-radius: 30px;
   background-color: #042940;
   display: flex;
   justify-content: center;

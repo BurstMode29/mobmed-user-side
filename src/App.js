@@ -47,7 +47,7 @@ function App() {
             <div className='ComponentBox-1'><div className='component-1'></div></div>
             <div className='ComponentBox-2'><div className='component-2'></div></div>
             <div className='Welcome'>
-              <h1>MOBILE MEDICATION</h1>
+              <h1>MOBILE MEDICATION BUSINESS</h1>
 
               <div className='WelcomeText'>
               <p>
