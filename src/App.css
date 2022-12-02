@@ -1,158 +1,20 @@
 .App {
   text-align: center;
-  overflow: hidden;
+}
+
+.ToDoList {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #417CF2;
 }
 
-#Content {
-  width: 150vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.Notes {
+  overflow-y: auto;
 }
 
-@media only screen and (max-width:500px) {
-  #Content {
-    margin-top: 12vw;
-  }
+.Notes textarea {
+  height: 50px;
+  width: 90%;
+  margin-bottom: 5px;
 }
-
-/* Components */
-.MyComponents {
-  width: 90vw;
-}
-
-.ComponentBox-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.component-1 {
-  height: 5rem;
-  width: 0.3rem;
-  border-radius: 5px 5px 0px 0px;
-  background-color: #042940;
-}
-
-.ComponentBox-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.component-2 {
-  height: 0.3rem;
-  width: 50rem;
-  border-radius: 10px;
-  background-color: #042940;
-}
-
-.ComponentBox-3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.component-3 {
-  height: 0.3rem;
-  width: 50rem;
-  border-radius: 10px;
-  background-color: #042940;
-}
-
-.ComponentBox-4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.component-4 {
-  height: 5rem;
-  width: 0.3rem;
-  background-color: #042940;
-}
-
-.ComponentBox-5 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.component-5 {
-  height: 3rem;
-  width: 50rem;
-  border-radius: 30px;
-  background-color: #042940;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Links a {
-  color: #9fc131;
-  font-size: 20px;
-  margin: 0px 3vw 0px 3vw;
-}
-/* Components */
-
-/* Welcome */
-
-.Welcome h1 {
-  font-size: 20px;
-  color: #042940;
-}
-
-.Welcome p {
-  font-size: 16px;
-  color: #042940;
-  width: 55vw;
-}
-
-@media only screen and (max-width:800px) {
-  .Welcome p {
-    width: 80vw;
-  }
-}
-
-.WelcomeText {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Welcome */
-
-/* Logo-Pulse */
-
-.Logo {
-  font-size: 10vw;
-  color: #9fc131;
-}
-
-/* Logo-Pulse */
-
-/* Footer */
-
-.footer {
-  margin: 4vw 4vw;
-}
-
-.FooterIcons {
-  font-size: 20px;
-  color:#042940;
-}
-
-.FooterIcons i{
-  margin: 0px 10px 0px 10px;
-}
-
-.FooterText {
-  font-size: 2vw;
-  color:#042940;
-}
-
-/* Footer */
-

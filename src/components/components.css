@@ -1,0 +1,80 @@
+.List {
+    height: 100%;
+    position: relative;
+    right: 70px;
+    width: 700px;
+}
+
+.listItem {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #020540;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    right: 20px;
+    color: white;
+}
+
+.ProfilePhoto {
+    height: 45px;
+    width: 45px;
+    margin: 2px;
+    border-radius: 100px;
+    background-color: white;
+}
+
+.listButton {
+    width: 100px;
+    height: 45px;
+    margin: 2px;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border-style: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.listButton:hover {
+    color: #417CF2;
+    text-shadow: 0px 0px 2px  #417CF2;
+}
+
+.appointmentsHeading {
+    font-weight: bold;
+    color: #417CF2;
+    font-size: 30px;
+    margin: 20px;
+}
+
+/* UpcomingAppointments */
+
+.acceptedHeading {
+    color: #417CF2;
+    font-weight: bold;
+    margin: 5px;
+    text-align: left;
+}
+
+.Accepted {
+    background-color: #020540;
+    margin: 5px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ProfilePicture {
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 100px;
+    margin: 1px;
+}

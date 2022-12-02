@@ -1,188 +1,208 @@
-/* side-menu */
-.SideMenu {
-    z-index: 3;
-    top: 30px;
-    right: 100%;
-    border-radius: 10px;
-    height: 700px;
-    width: 700px;
-    background-color:#042940;
-    position: absolute;
-    box-shadow: 1px 1px 10px;
-    transition: right 1s;
+/* PanelContainer */
+.panelContainer {
+  display: flex;
+  height: 60vw;
+  width: 100%;
+  background-color: #020540;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width:1200px) {
+  .panelContainer {
+    flex-direction: column;
   }
-  
-  @media only screen and (max-width:1200px) {
-    .SideMenu {
-      display: none;
-    }
+}
+
+.leftPanel {
+  height: 60vw;
+  width: 700px;
+  text-align: left;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and(max-width:1200px) {
+  .leftPanel {
+    display: none;
   }
+}
 
-  .DashButton {
-    position: relative;
-    right: 20px;
-    top: -3px;
-    font-size: 40px;
-    color:#9fc131;
-  }
-  
-  .Pull {
-    top: 50px;
-    left: 670px;
-    padding: 0;
-    text-align: right;
-    border-radius: 10px;
-    position: absolute;
-    height: 50px;
-    width: 100px;
-    background-color:#042940;
-  }
-  
-  @media only screen and (max-width:800px) {
-    .Pull {
-      left: 270px;
-    }
-  }
-  /* side-menu */
+.middlePanel {
+  height: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #020540;
+}
 
-  /* side menu-content */
+.rightPanel {
+  height: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #020540;
+}
 
-  .ProfilePhoto {
-    margin: 5px 5px;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    border-radius: 100%;
-    transition: 0.5s;
-  }
-
-  .DashIcons {
-    position: relative;
-    top: -50px;
-    left: 400px;
-  }
-
-  .DesktopBell {
-    display: block;
-    position: absolute;
-    top: 20px;
-    left: 250px;
-    font-size: 20px;
-    color: white;
-  }
-
-  .DesktopSettings {
-    color: white;
-    position: absolute;
-    top: 20px;
-    left: 200px;
-    font-size: 20px;
-  }
-
-  .DesktopMessaging {
-    color: white;
-    font-size: 23px;
-    position: absolute;
-    top: 18px;
-    left: 150px;
-  }
-
-  .DashCards {
-    margin-top: 20px;
-    position: relative;
-    transition: 0.5s;
-  }
-
-  .Cards {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .DashHeader {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-  }
-
-  .Revenue {
-    height: 100px;
-    width: 200px;
-    border-radius: 5px;
-    background: white;
-    margin: 5px 5px;
-  }
-
-  .Sales {
-    height: 100px;
-    width: 200px;
-    border-radius: 5px;
-    background: white;
-    margin: 5px 5px;
-  }
+/* PanelContainer */
 
 
-  .Cost {
-    height: 100px;
-    width: 200px;
-    border-radius: 5px;
-    background: white;
-    margin: 5px 5px;
-  }
-
-  .TableHeader {
-    font-weight: bold;
-    color: white;
-  }
-
-  .DesktopTable {
-    border-collapse: collapse;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .DesktopTable th {
-    text-align: left;
-    background-color: #9fc131;
-    border: 1px solid grey;
-  }
-
-  .DesktopTable td {
-    background-color: white;
-    border: 1px solid grey;
-  }
+/* PanelContent */
 
 
-  /* side menu-content */
+/* LeftPanel */
+.Logo {
+  font-size: 20px;
+}
 
+.Logo span {
+  color: #417CF2;
+}
 
-  /* Notifications */
-  .notifBox {
-    height: 500px;
-    width: 300px;
-    border-radius: 10px;
-    background-color:#042940;
-    position: absolute;
-    top: 230px;
-    left: -800px;
-    transition: left 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.leftPanelContent {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  right: 40px;
+}
 
-  .notification {
-    height: 50px;
-    width: 250px;
-    background-color: white;
-    border-radius: 10px;
-  }
+.leftPanelContent li {
+  margin-bottom: 30px;
+  list-style: none;
+  text-align: left;
+  font-size: 20px;
+}
 
-  .CloseNotifications {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: white;
-  }
+/* .logOut {
+  position: relative;
+  top: 115px;
+  text-align: left;
+  font-size: 20px;
+} */
+
+/* MiddlePanel */
+
+.searchBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.searchBar input {
+  height: 40px;
+  width: 550px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.searchBar i {
+  background-color: beige;
+  padding: 13px;
+  border-radius: 5px;
+}
+
+.middlePanelInfo1 {
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.upcomingAppointments {
+  height: 100px;
+  width: 400px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  overflow-y: auto;
+  background-color: white;
+}
+
+.financialStatus {
+  height: 100px;
+  width: 200px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.memberAccess {
+  color: #417CF2;
+  font-weight: bold;
+  font-size: 20px;
+  rotate: -50deg;
+}
+
+.middlePanelInfo2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.liveMap {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.Messages {
+  height: 200px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.Calender {
+  margin: 10px;
+  color: white;
+}
+
+.toDo {
+  height: 200px;
+  margin: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  overflow-y: auto;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.Profile {
+  height: 55px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.Status {
+  height: 60px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.link {
+  color: white;
+  text-decoration-line: none;
+}
+
+.link:hover {
+  color: #417CF2;
+}
