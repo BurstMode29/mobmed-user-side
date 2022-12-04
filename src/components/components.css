@@ -1,80 +1,75 @@
-.List {
-    height: 100%;
-    position: relative;
-    right: 70px;
-    width: 700px;
-}
-
+/*  */
 .listItem {
-    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #020540;
-    position: relative;
-    margin-bottom: 10px;
+    height: 50px;
+    margin: 20px;
     border-radius: 100px;
-    right: 20px;
     color: white;
+    background-color: #333140;
+}
+
+.Appointments {
+    height: 100%;
+    width: 100%;
 }
 
 .ProfilePhoto {
-    height: 45px;
-    width: 45px;
-    margin: 2px;
+    height: 40px;
+    width: 40px;
     border-radius: 100px;
-    background-color: white;
+    background-color: #F26D3D;
+    margin-left: 5px;
 }
 
 .listButton {
-    width: 100px;
-    height: 45px;
-    margin: 2px;
-    font-weight: bold;
     color: white;
-    background-color: transparent;
-    border-style: none;
+    height: 40px;
+    width: 150px;
     border-radius: 100px;
-    cursor: pointer;
+    border-style: none;
+    background-color: #F26D3D;
+    margin-right: 5px;
 }
 
 .listButton:hover {
-    color: #417CF2;
-    text-shadow: 0px 0px 2px  #417CF2;
+    box-shadow: 0px 0px 10px #F26D3D;
 }
 
 .appointmentsHeading {
-    font-weight: bold;
-    color: #417CF2;
+    color: white;
     font-size: 30px;
-    margin: 20px;
-}
-
-/* UpcomingAppointments */
-
-.acceptedHeading {
-    color: #417CF2;
-    font-weight: bold;
-    margin: 5px;
     text-align: left;
+    margin-left: 75px;
 }
+/*  */
 
 .Accepted {
-    background-color: #020540;
-    margin: 5px;
-    height: 40px;
-    color: white;
-    font-weight: bold;
-    border-radius: 100px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color:#212026;
+    margin-bottom: 10px;
     display: flex;
+    border-radius: 100px;
     justify-content: space-between;
     align-items: center;
 }
 
 .ProfilePicture {
-    height: 35px;
-    width: 35px;
-    background-color: white;
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    background-color:#F26D3D;
     border-radius: 100px;
-    margin: 1px;
+}
+
+.listName {
+    color: white;
+    margin-right: 5px;
+}
+
+.acceptedHeading {
+    color: #F26D3D;
 }

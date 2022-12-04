@@ -1,33 +1,27 @@
 import React from 'react';
-import UpcomingAppointments from '../components/UpcomingAppointments';
+import { Routes, Route } from 'react-router';
+import Activity from './Activity';
+import Appointments from './Appointments';
+import Home from './Home';
+import Messages from '../pages/Messages';
+import Statistics from '../pages/Statistics';
+import Settings from '../pages/Settings';
 
 function Dashboard() {
   return (
-    <div>
-      <div className='middlePanel'>
-        <div>
-          <div className='searchBar'>
-            <input type='text' placeholder='SEARCH' />
-            <i class="fa-sharp fa-solid fa-bell"></i>
-          </div>
 
-          <div className='middlePanelInfo1'>
-            <div className='upcomingAppointments'>
-              <UpcomingAppointments />
-            </div>
-            <div className='financialStatus'>
-              <div className='memberAccess'>Premium<br></br>Access!</div>
-            </div>
-          </div>
+    <div className='middlePanel'>
+      <Routes>
+        <Route path='/dashboard' element={<Home />} />
+        <Route path="/appointments" element={<Appointments />} />
+        <Route path='/activity' element={<Activity />} />
+        <Route path='/messages' element={<Messages />} />
+        <Route path='/statistics' element={<Statistics />} />
+        <Route path='/settings' element={<Settings />} />
+      </Routes>
 
-          <div className='middlePanelInfo2'>
-            <div className='liveMap'> <div className='memberAccess'>Premium<br></br> Access!</div></div>
-            <div className='Messages'> <div className='memberAccess'>Premium<br></br> Access!</div></div>
-          </div>
-        </div>
-
-      </div>
     </div>
+
   )
 }
 

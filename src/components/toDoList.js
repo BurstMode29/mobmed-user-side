@@ -15,7 +15,7 @@ const toDoList = (props) => {
     return (
         <div>
             <div className="ToDoList">
-                <h1>ADD TO-DO</h1>
+                <div>ADD TO-DO</div>
                 <ol>
                     {props.ToDo.map(
                         i => <div> <button onClick={() => addToList(i)}>+</button></div>

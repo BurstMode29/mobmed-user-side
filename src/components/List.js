@@ -10,7 +10,7 @@ const mapStateToProps = (state) => {
 
 const List = (props) => {
     const addToList = (list) => {
-        props.dispatch({type: "ADD_TO_LIST", data: list })
+        props.dispatch({ type: "ADD_TO_LIST", data: list })
     }
 
     return (
@@ -20,7 +20,7 @@ const List = (props) => {
                 {props.list.map(
                     i => <div className="listItem" key={i.name}>
                         <div className="ProfilePhoto"></div>
-                        {i.name}
+                        <div className="listName">{i.name}</div>
                         <button className="listButton" onClick={() => addToList(i)}>Accept</button>
                     </div>
                 )}

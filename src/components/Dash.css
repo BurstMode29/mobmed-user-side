@@ -1,208 +1,34 @@
 /* PanelContainer */
 .panelContainer {
   display: flex;
-  height: 60vw;
+  height: 100%;
   width: 100%;
-  background-color: #020540;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-@media only screen and (max-width:1200px) {
-  .panelContainer {
-    flex-direction: column;
-  }
+  position: absolute;
 }
 
 .leftPanel {
-  height: 60vw;
-  width: 700px;
+  height: 100%;
+  width: 20%;
   text-align: left;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media only screen and(max-width:1200px) {
-  .leftPanel {
-    display: none;
-  }
+  background-color: #212026;
 }
 
 .middlePanel {
-  height: 60vw;
+  height: 100%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #020540;
+  background-color: #212026;
 }
 
 .rightPanel {
-  height: 60vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #020540;
+  height: 100%;
+  width: 30%;
+  background-color: #212026;
 }
 
 /* PanelContainer */
 
 
-/* PanelContent */
-
-
-/* LeftPanel */
-.Logo {
-  font-size: 20px;
-}
-
-.Logo span {
-  color: #417CF2;
-}
-
-.leftPanelContent {
-  position: relative;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  right: 40px;
-}
-
-.leftPanelContent li {
-  margin-bottom: 30px;
-  list-style: none;
-  text-align: left;
-  font-size: 20px;
-}
-
-/* .logOut {
-  position: relative;
-  top: 115px;
-  text-align: left;
-  font-size: 20px;
-} */
-
-/* MiddlePanel */
-
-.searchBar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px;
-}
-
-.searchBar input {
-  height: 40px;
-  width: 550px;
-  border-radius: 5px;
-  border-style: none;
-}
-
-.searchBar i {
-  background-color: beige;
-  padding: 13px;
-  border-radius: 5px;
-}
-
-.middlePanelInfo1 {
-  width: 650px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px;
-}
-
-.upcomingAppointments {
-  height: 100px;
-  width: 400px;
-  margin-top: 80px;
-  margin-bottom: 100px;
-  border-radius: 10px;
-  overflow-y: auto;
-  background-color: white;
-}
-
-.financialStatus {
-  height: 100px;
-  width: 200px;
-  margin-top: 80px;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  background-color: white;
-}
-
-.memberAccess {
-  color: #417CF2;
-  font-weight: bold;
-  font-size: 20px;
-  rotate: -50deg;
-}
-
-.middlePanelInfo2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px;
-}
-
-.liveMap {
-  height: 200px;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  background-color: white;
-}
-
-.Messages {
-  height: 200px;
-  width: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  background-color: white;
-}
-
-.Calender {
-  margin: 10px;
-  color: white;
-}
-
-.toDo {
-  height: 200px;
-  margin: 10px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  overflow-y: auto;
-  border-radius: 10px;
-  background-color: white;
-}
-
-.Profile {
-  height: 55px;
-  margin: 10px;
-  border-radius: 10px;
-  background-color: white;
-}
-
-.Status {
-  height: 60px;
-  margin: 10px;
-  border-radius: 10px;
-  background-color: white;
-}
-
-.link {
-  color: white;
-  text-decoration-line: none;
-}
-
-.link:hover {
-  color: #417CF2;
-}

@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
 import '../components/Dash.css';
+import '../App.css';
 import Calender from 'react-calendar';
-import Dashboard from '../pages/Dashboard';
-import { Routes, Route, Link } from 'react-router-dom';
-import Appointments from '../pages/Appointments';
-import Activity from '../pages/Activity';
-import Messages from '../pages/Messages';
-import Statistics from '../pages/Statistics';
-import Settings from '../pages/Settings';
 import ToDoList from './toDoList';
 import AddToDo from './addToDo';
+import Dashboard from '../pages/Dashboard';
+import { Link } from 'react-router-dom';
 
 
 const Dash = () => {
@@ -34,14 +30,7 @@ const Dash = () => {
           </div>
         </div>
 
-        <Routes>
-          <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/appointments' element={<Appointments />} />
-          <Route path='/activity' element={<Activity />} />
-          <Route path='/messages' element={<Messages />} />
-          <Route path='/statistics' element={<Statistics />} />
-          <Route path='/settings' element={<Settings />} />
-        </Routes>
+        <Dashboard />
 
         <div className='rightPanel'>
           <div>

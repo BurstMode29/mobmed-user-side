@@ -11,12 +11,12 @@ const mapStateToProps = (state) => {
 const UpcomingAppointments = (props) => {
     return (
         <div>
-            <div className="acceptedHeading">Upcoming Appoinments</div>
+            <div className="acceptedHeading">Appoinments</div>
             <div>
-                {props.upcoming.map (
+                {props.upcoming.map(
                     i => <div className="Accepted" key={i.name}>
                         <div className="ProfilePicture"></div>
-                        {i.name} 
+                        <div className="listName">{i.name}</div>
                     </div>
                 )}
             </div>
