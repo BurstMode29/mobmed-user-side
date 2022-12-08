@@ -14,6 +14,12 @@
   background-color: #212026;
 }
 
+@media only screen and (max-width:800px) {
+  .leftPanel {
+    display: none;
+  }
+}
+
 .middlePanel {
   height: 100%;
   width: 50%;
@@ -23,10 +29,22 @@
   background-color: #212026;
 }
 
+@media only screen and (max-width:800px) {
+  .middlePanel {
+    width: 100%;
+  }
+}
+
 .rightPanel {
   height: 100%;
   width: 30%;
   background-color: #212026;
+}
+
+@media only screen and (max-width:800px) {
+  .rightPanel {
+    display: none;
+  }
 }
 
 /* PanelContainer */

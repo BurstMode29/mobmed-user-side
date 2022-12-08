@@ -7,7 +7,8 @@ const Home = () => {
         <div className="Home">
             <div className="Top">
                 <div><input type='text' placeholder="Search" /></div>
-                <div className="Profile1"></div>
+                <div className="Profile1"><i class="fa-regular fa-bell"></i></div>
+                <div className='MobileMenu'><i class="fa-solid fa-bars"></i></div>
             </div>
             <div className="Middle">
                 <div className="inProgress">

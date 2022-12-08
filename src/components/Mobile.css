@@ -1,46 +1,14 @@
-/* Mobile Menu */
-
 .MobileMenu {
-    position: absolute;
-    top: 0.1px;
-    left: 0.1px;
-    height: 0%;
-    width: 70%;
-    background-color: #042940;
-    transition: height 1s;
+  font-size: 30px;
+  color: #F26D3D;
+  position: relative;
+  right: 10px;
+  top: 0px;
+  display: none;
+}
+
+@media only screen and (max-width:800px) {
+  .MobileMenu {
+    display: block;
   }
-
-  .MobileMenuIcon {
-    display: flex;
-    background-color: #042940;
-    justify-content: right;
-    align-items: center;
-  }
-
-  .MobileMenuIcon i {
-    top: 20px;
-    right: 30px;
-    color: black;
-    position: absolute;
-    font-size: 30px;
-    display: none;
-  }
-  
-  /* Responsive Code */
-
-
-  @media only screen and (max-width:1000px) {
-    .MobileMenuIcon i{
-      display: block;
-    }
-  }
-
-  
-
-  
-
-
-  /* Responsive Code */
-
- 
-  /* /Mobile Menu */
+}

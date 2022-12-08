@@ -16,32 +16,10 @@ function App() {
   // }
   // Cookie
 
-  function MobileMenu() {
-    var m = document.getElementById("MobileMenu");
-    if (m.style.height === "0%") {
-      m.style.height = "100%";
-      document.getElementById("PP").style.left = "5px";
-      document.getElementById("DI").style.left = "0px";
-      document.getElementById("DC").style.left = "0px";
-      document.getElementById("DT").style.left = "0px";
-    } else {
-      m.style.height = "0%"
-      document.getElementById("PP").style.left = "-50px";
-      document.getElementById("DI").style.left = "-300px";
-      document.getElementById("DC").style.left = "-310px";
-      document.getElementById("DT").style.left = "-300px";
-    }
-  }
-
   return (
     <div className="App">
       <Mobile></Mobile>
       <Dash></Dash>
-      <div id="Content">
-        <div>
-          <div className='MobileMenuIcon' onClick={MobileMenu}><i class="fa-solid fa-bars"></i></div>
-        </div>
-      </div>
     </div>
   );
 }

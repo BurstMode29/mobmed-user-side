@@ -77,12 +77,40 @@
   margin-left: 100px;
 }
 
+@media only screen and (max-width:800px) {
+  .Top input {
+    width: 130px;
+    height: 30px;
+    margin-left: 0px;
+  }
+
+  .Top {
+    left: 5px;
+    top: -40px;
+    position: relative;
+  }
+}
+
 .Profile1 {
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
   margin-right: 100px;
-  border-radius: 100%;
-  background-color: #F26D3D;
+  border-radius: 100px;
+  background-color: #333140;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F26D3D;
+}
+
+@media only screen and (max-width:800px) {
+  .Profile1 {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    right: 20px;
+    margin-right: 0px;
+  }
 }
 
 /*  */
@@ -91,9 +119,16 @@
 /*  */
 .Middle {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 0px 100px 50px 100px;
+}
+
+@media only screen and (max-width:800px) {
+  .Middle {
+    flex-direction: column;
+  }
 }
 
 .inProgress {
@@ -104,6 +139,14 @@
   overflow-y: auto;
 }
 
+@media only screen and (max-width:800px) {
+  .inProgress {
+    height: 100px;
+    width: 90vw;
+    margin-bottom: 5px;
+  }
+}
+
 .Finance {
   height: 200px;
   width: 200px;
@@ -111,13 +154,29 @@
   background-color: #333140;
 }
 
+@media only screen and (max-width:800px) {
+  .Finance {
+    height: 100px;
+    width: 90vw;
+  }
+}
+
 /*  */
 
 .Bottom {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 0px 100px 0px 100px;
+}
+
+@media screen and (max-width:800px) {
+  .Bottom {
+    flex-direction: column;
+    position: relative;
+    top: -45px;
+  }
 }
 
 .Map {
@@ -127,11 +186,26 @@
   background-color: #333140;
 }
 
+@media screen and (max-width:800px) {
+  .Map {
+    width: 90vw;
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
 .Messages {
   height: 200px;
   width: 200px;
   border-radius: 10px;
   background-color: #333140;
+}
+
+@media screen and (max-width:800px) {
+  .Messages {
+    width: 90vw;
+    height: 100px;
+  }
 }
 
 /*  */
