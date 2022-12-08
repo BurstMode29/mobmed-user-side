@@ -59,6 +59,7 @@
 .Home {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .Top {
@@ -81,7 +82,7 @@
   .Top input {
     width: 130px;
     height: 30px;
-    margin-left: 0px;
+    margin-left: 15px;
   }
 
   .Top {
@@ -238,6 +239,8 @@
 .link {
   text-decoration-line: none;
 }
+
+
 
 .logOut {
   width: 100%;

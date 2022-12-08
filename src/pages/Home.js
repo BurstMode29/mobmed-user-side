@@ -1,6 +1,7 @@
 import React from "react";
 import '../App.css';
 import UpcomingAppointments from '../components/UpcomingAppointments';
+import { MenuButton } from "../components/Mobile";
 
 const Home = () => {
     return (
@@ -8,7 +9,7 @@ const Home = () => {
             <div className="Top">
                 <div><input type='text' placeholder="Search" /></div>
                 <div className="Profile1"><i class="fa-regular fa-bell"></i></div>
-                <div className='MobileMenu'><i class="fa-solid fa-bars"></i></div>
+                <MenuButton />
             </div>
             <div className="Middle">
                 <div className="inProgress">
