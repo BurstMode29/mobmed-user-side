@@ -12,7 +12,7 @@ function Dashboard() {
 
     <div className='middlePanel'>
       <Routes>
-        <Route path='/dashboard' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path="/appointments" element={<Appointments />} />
         <Route path='/activity' element={<Activity />} />
         <Route path='/messages' element={<Messages />} />
