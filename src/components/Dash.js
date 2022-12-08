@@ -18,7 +18,7 @@ const Dash = () => {
             <div className='Logo'><span><i class="fa-solid fa-briefcase"></i>MOB</span>MED SERVICES</div>
             <div className='leftPanelContent'>
               <ul>
-                <Link className='link' to='/dashboard'><li><i class="fa-solid fa-table-columns"></i> Dashboard</li></Link>
+                <Link className='link' to='/'><li><i class="fa-solid fa-table-columns"></i> Dashboard</li></Link>
                 <Link className='link' to='/appointments'><li><i class="fa-regular fa-calendar-check"></i> Appointments</li></Link>
                 <Link className='link' to='/activity'><li><i class="fa-solid fa-chart-line"></i> Activity</li></Link>
                 <Link className='link' to='/messages'><li><i class="fa-solid fa-envelope"></i> Messages</li></Link>
