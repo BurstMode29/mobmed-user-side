@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: aliceblue;
 }
 
 /*  */
@@ -247,4 +248,12 @@
   font-size: 20px;
   margin-left: 40px;
   text-align: left;
+}
+
+.ToggleMode {
+  display:flex;
+  justify-content: center;
+  align-items: center;  
+  position: relative;
+  top: 10px;
 }
